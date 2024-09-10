@@ -4,13 +4,12 @@ const { randomBytes } = require("crypto");
 const cors = require("cors");
 const axios = require("axios");
 
-
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
 const posts = {};
-console.log('started........');
+console.log("started........");
 app.get("/posts", (req, res) => {
   res.send(posts);
 });
@@ -42,9 +41,8 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log('new version to check updation method-2:0.2');
+  console.log("new version to check updation method-2:0.2");
   console.log("Listening on 4000");
 });
 
-
-console.log('new started at 3');
+console.log("new started at 3");
